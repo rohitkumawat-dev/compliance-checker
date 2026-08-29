@@ -1,3 +1,4 @@
+```jsx
 import { Link } from 'react-router-dom'
 
 function Navbar() {
@@ -6,7 +7,7 @@ function Navbar() {
       <div className="mx-auto flex h-full max-w-[1545px] items-center justify-between px-8">
 
         {/* Logo + Brand */}
-        <div className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white text-black">
             ⚖
           </div>
@@ -14,31 +15,31 @@ function Navbar() {
           <span className="text-[17px] font-semibold tracking-tight text-white">
             CompliCheck
           </span>
-        </div>
+        </Link>
 
         {/* Navigation Links */}
         <div className="hidden items-center gap-9 text-[14px] text-white/50 md:flex">
 
-          <a
-            href="#how-it-works"
+          <Link
+            to="/how-it-works"
             className="transition-colors hover:text-white"
           >
             How it works
-          </a>
+          </Link>
 
-          <a
-            href="#rules"
+          <Link
+            to="/rules"
             className="transition-colors hover:text-white"
           >
             Rules
-          </a>
+          </Link>
 
-          <a
-            href="#about"
+          <Link
+            to="/about"
             className="transition-colors hover:text-white"
           >
             About
-          </a>
+          </Link>
 
         </div>
 
@@ -77,3 +78,4 @@ function Navbar() {
 }
 
 export default Navbar
+```
